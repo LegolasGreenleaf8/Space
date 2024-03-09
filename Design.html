@@ -1,0 +1,180 @@
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+	body {font-size:16px;}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+</style>
+<body class="w3-light-grey">
+	
+<!-- !PAGE CONTENT! -->
+	<div class="w3-main" style="margin-left:200px;margin-right:200px">
+	
+
+<!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Space Interior Designing & Co</b></h1>
+<h1 class="w3-xxxlarge w3-text-green"><b> Gallery </b></h1>
+
+        <hr style="width:50px;border:5px solid black" class="w3-round">
+  </div>
+
+  
+  <!-- Photo grid -->
+  
+    <div class="w3-quarter">
+      <img src="pictures/insta1.jpg" style="width:100%" onclick="onClick(this)" >
+      <img src="pictures/insta2.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="pictures/insta17.jpg" style="width:100%" onclick="onClick(this)"> 
+	  <img src="pictures/insta3.jpg"  width="260" height="260" onclick="onClick(this)"> 
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="pictures/insta5.jpg" style="width:100%" onclick="onClick(this)" >
+      <img src="pictures/insta6.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="pictures/insta7.jpg" style="width:100%" onclick="onClick(this)">
+	  <img src="pictures/insta15.jpg" style="width:100%" onclick="onClick(this)" >
+	  <img src="pictures/insta19.jpg" width="260" height="205" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="pictures/insta14.jpg" style="width:100%" onclick="onClick(this)" >
+      <img src="pictures/insta9.jpg" style="width:100%" onclick="onClick(this)" >
+      <img src="pictures/insta10.jpg" style="width:100%" onclick="onClick(this)">
+	  <img src="pictures/insta18.jpg" width="259" height="322" onclick="onClick(this)">
+	 
+	 </div>
+
+    <div class="w3-quarter">
+      <img src="pictures/insta11.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="pictures/insta12.jpg" style="width:100%" onclick="onClick(this)" >
+      <img src="pictures/insta13.jpg" style="width:100%" onclick="onClick(this)" >
+	  <img src="pictures/insta20.jpg" width="259" height="200" onclick="onClick(this)">
+    </div>
+  </div>
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- !PAGE CONTENT! -->
+	<div class="w3-main" style="margin-left:200px;margin-right:200px">
+
+<!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    
+<h1 class="w3-xxxlarge w3-text-green"><b> Our Team </b></h1>
+        <hr style="width:50px;border:5px solid black" class="w3-round">
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="pictures/pic52.jpg" width="330" height="470" >
+      <div class="container">
+        <h2>Sinali Wijeweera </h2>
+        <p class="title">CEO & Founder</p>
+        <p>Sinali a graduate of the Interior Designing Program at University of London. She has completed numerous professional internships here in Sri Lanka as well as in overseas.<br> Passionate about all things design, art and architecture she opened up her own interior designing company called Space Interior Designing & Co with the main intention of making her dream a reality. </p>
+        <p>sinali@spaceinterior</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="pictures/pic53.jpg" width="330" height="470" >
+      <div class="container">
+        <h2>Ravindra Perera</h2>
+        <p class="title">Art Director</p>
+        <p>Ravindra, an interior designer with a huge interest in hospitality design.He has a vast experience in designing hotels and restaurants - both freelance and as a firm employee.<br> 
+He was also hired by as an Interior Designing Consultant by leading Sri Lankan corporatives.  </p>
+        <p>Ravindra@spaceinterior.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="pictures/pic54.jpg" width="330" height="470" >
+      <div class="container">
+        <h2>Sehani Cooray</h2>
+        <p class="title">Designer</p>
+        <p>A design editor at House & Home magazine for 6 years, she creates interiors that mix traditional and modern styles. <br> Specializing in luxury interiors, Sehani draws inspiration from her prior work with renowned French designer Christian Liaigre. She is a colleague of Sinali with a vast amount of experience in the interior designing field.  </p>
+        <p>sehani@spaceinterior.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
